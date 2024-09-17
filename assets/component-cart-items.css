@@ -190,7 +190,11 @@ cart-remove-button .icon-remove {
   order: 1;
 }
 
+<<<<<<< HEAD
 .cart-item__error-text + .svg-wrapper {
+=======
+.cart-item__error-text + svg {
+>>>>>>> 91877c2e (init repo)
   flex-shrink: 0;
   width: 1.5rem;
   height: 1.5rem;
@@ -198,7 +202,11 @@ cart-remove-button .icon-remove {
   margin-top: 0.25rem;
 }
 
+<<<<<<< HEAD
 .cart-item__error-text:empty + .svg-wrapper {
+=======
+.cart-item__error-text:empty + svg {
+>>>>>>> 91877c2e (init repo)
   display: none;
 }
 
@@ -306,6 +314,13 @@ cart-remove-button .icon-remove {
     width: 10rem;
   }
 
+<<<<<<< HEAD
+=======
+  .cart-item cart-remove-button {
+    margin: 0.5rem 0 0 1.5rem;
+  }
+
+>>>>>>> 91877c2e (init repo)
   .cart-item__price-wrapper > *:only-child:not(.cart-item__discounted-prices) {
     margin-top: 1rem;
   }

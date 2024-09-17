@@ -34,7 +34,11 @@
   word-break: break-word;
 }
 
+<<<<<<< HEAD
 .accordion .svg-wrapper {
+=======
+.accordion .icon-accordion {
+>>>>>>> 91877c2e (init repo)
   align-self: center;
   fill: rgb(var(--color-foreground));
   height: calc(var(--font-heading-scale) * 2rem);

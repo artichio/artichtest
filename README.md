@@ -1,50 +1,65 @@
-# Dawn
-
-[![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)
+# ArtichTest
 
 [Getting started](#getting-started) |
-[Staying up to date with Dawn changes](#staying-up-to-date-with-dawn-changes) |
 [Developer tools](#developer-tools) |
-[Contributing](#contributing) |
-[Code of conduct](#code-of-conduct) |
-[Theme Store submission](#theme-store-submission) |
-[License](#license)
 
-Dawn represents a HTML-first, JavaScript-only-as-needed approach to theme development. It's Shopify's first source available theme with performance, flexibility, and [Online Store 2.0 features](https://www.shopify.com/partners/blog/shopify-online-store) built-in and acts as a reference for building Shopify themes.
-
-* **Web-native in its purest form:** Themes run on the [evergreen web](https://www.w3.org/2001/tag/doc/evergreen-web/). We leverage the latest web browsers to their fullest, while maintaining support for the older ones through progressive enhancement—not polyfills.
-* **Lean, fast, and reliable:** Functionality and design defaults to “no” until it meets this requirement. Code ships on quality. Themes must be built with purpose. They shouldn’t support each and every feature in Shopify.
-* **Server-rendered:** HTML must be rendered by Shopify servers using Liquid. Business logic and platform primitives such as translations and money formatting don’t belong on the client. Async and on-demand rendering of parts of the page is OK, but we do it sparingly as a progressive enhancement.
-* **Functional, not pixel-perfect:** The Web doesn’t require each page to be rendered pixel-perfect by each browser engine. Using semantic markup, progressive enhancement, and clever design, we ensure that themes remain functional regardless of the browser.
-
-You can find a more detailed version of our theme code principles in the [contribution guide](https://github.com/Shopify/dawn/blob/main/.github/CONTRIBUTING.md#theme-code-principles).
+This is a fork of Shopify's Dawn theme and will be used for our technical test.
 
 ## Getting started
-We recommend using Dawn as a starting point for theme development. [Learn more on Shopify.dev](https://shopify.dev/themes/getting-started/create).
 
-> If you're building a theme for the Shopify Theme Store, then you can use Dawn as a starting point. However, the theme that you submit needs to be [substantively different from Dawn](https://shopify.dev/themes/store/requirements#uniqueness) so that it provides added value for merchants. Learn about the [ways that you can use Dawn](https://shopify.dev/themes/tools/dawn#ways-to-use-dawn).
+### Prerequisites
 
-Please note that the main branch may include code for features not yet released. The "stable" version of Dawn is available in the theme store.
+To get started with this test, you need the following:
 
-## Staying up to date with Dawn changes
+- A Shopify Partner account
+- A development store (if you don't have one, create one for free [here](https://www.shopify.com/partners))
+- [Shopify CLI](https://shopify.dev/docs/themes/tools/cli) installed on your machine
+- [Theme Check](https://github.com/shopify/theme-check) (Optional, but recommended for linting and best practices)
 
-Say you're building a new theme off Dawn but you still want to be able to pull in the latest changes, you can add a remote `upstream` pointing to this Dawn repository.
+### Setup
 
-1. Navigate to your local theme folder.
-2. Verify the list of remotes and validate that you have both an `origin` and `upstream`:
-```sh
-git remote -v
-```
-3. If you don't see an `upstream`, you can add one that points to Shopify's Dawn repository:
-```sh
-git remote add upstream https://github.com/Shopify/dawn.git
-```
-4. Pull in the latest Dawn changes into your repository:
-```sh
-git fetch upstream
-git pull upstream main
-```
+1. Fork and clone this repository to your local machine.
+   
+2. Navigate to the project directory in your terminal and run the Shopify CLI command to serve the theme locally:
+
+    ```bash
+    shopify theme dev
+    ```
+
+    This will open the local development server where you can preview your changes in real-time.
+
+3. Open the project in Visual Studio Code (or your preferred code editor). If you're using VS Code, you should be prompted to install the [Theme Check extension](https://marketplace.visualstudio.com/items?itemName=Shopify.theme-check-vscode).
+
+4. Start developing by following the exercise below.
+
+## Exercise
+
+### Objective
+
+The goal of this exercise is to demonstrate your understanding of Shopify’s templating language (Liquid) and your ability to implement a clean and user-friendly UI.
+
+### Task: Add Custom Icon + Text Blocks to the Product Section
+
+1. **Extend the product section**:
+    - Locate the existing `product.liquid` section file in the theme.
+    - Add a new custom block that represents a pair consisting of an **icon (image)** and **text**.
+
+2. **Create the block**:
+    - The block should allow a store admin to:
+        - Upload an image (icon).
+        - Input a short text description associated with the icon.
+    - Each block represents **one icon + text pair**.
+
+3. **Multiple blocks**:
+    - Ensure that multiple blocks can be added, so the store admin can create a list of icon + text pairs.
+
+4. **UI**:
+    - Ensure that the layout of the icon + text pairs is responsive and visually appealing.
+    - Style the icons and text to align nicely, either using existing Dawn styles or adding custom styles if necessary.
+
+### Submission
+
+When you're done, ensure your code is clean and well-commented. Push your changes to your forked repository and share the link with us.
 
 ## Developer tools
 
@@ -67,33 +82,3 @@ You can also run it from a terminal with the following Shopify CLI command:
 ```bash
 shopify theme check
 ```
-
-### Continuous Integration
-
-Dawn uses [GitHub Actions](https://github.com/features/actions) to maintain the quality of the theme. [This is a starting point](https://github.com/Shopify/dawn/blob/main/.github/workflows/ci.yml) and what we suggest to use in order to ensure you're building better themes. Feel free to build off of it!
-
-#### Shopify/lighthouse-ci-action
-
-We love fast websites! Which is why we created [Shopify/lighthouse-ci-action](https://github.com/Shopify/lighthouse-ci-action). This runs a series of [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) audits for the home, product and collections pages on a store to ensure code that gets added doesn't degrade storefront performance over time.
-
-#### Shopify/theme-check-action
-
-Dawn runs [Theme Check](#Theme-Check) on every commit via [Shopify/theme-check-action](https://github.com/Shopify/theme-check-action).
-
-## Contributing
-
-Want to make commerce better for everyone by contributing to Dawn? We'd love your help! Please read our [contributing guide](https://github.com/Shopify/dawn/blob/main/.github/CONTRIBUTING.md) to learn about our development process, how to propose bug fixes and improvements, and how to build for Dawn.
-
-## Code of conduct
-
-All developers who wish to contribute through code or issues, please first read our [Code of Conduct](https://github.com/Shopify/dawn/blob/main/.github/CODE_OF_CONDUCT.md).
-
-## Theme Store submission
-
-The [Shopify Theme Store](https://themes.shopify.com/) is the place where Shopify merchants find the themes that they'll use to showcase and support their business. As a theme partner, you can create themes for the Shopify Theme Store and reach an international audience of an ever-growing number of entrepreneurs.
-
-Ensure that you follow the list of [theme store requirements](https://shopify.dev/themes/store/requirements) if you're interested in becoming a [Shopify Theme Partner](https://themes.shopify.com/services/themes/guidelines) and building themes for the Shopify platform.
-
-## License
-
-Copyright (c) 2021-present Shopify Inc. See [LICENSE](/LICENSE.md) for further details.

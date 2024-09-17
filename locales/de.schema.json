@@ -285,7 +285,11 @@
       }
     },
     "collection_cards": {
+<<<<<<< HEAD
       "name": "Kollektionskarten",
+=======
+      "name": "Kategoriekarten",
+>>>>>>> 91877c2e (init repo)
       "settings": {
         "style": {
           "options__1": {

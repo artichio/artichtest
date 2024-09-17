@@ -155,9 +155,13 @@
             aria-label="{{ 'general.slider.previous_slide' | t }}"
             aria-controls="Slider-{{ section.id }}"
           >
+<<<<<<< HEAD
             <span class="svg-wrapper">
               {{- 'icon-caret.svg' | inline_asset_content -}}
             </span>
+=======
+            {% render 'icon-caret' %}
+>>>>>>> 91877c2e (init repo)
           </button>
           <div class="slider-counter caption">
             <span class="slider-counter--current">1</span>
@@ -172,9 +176,13 @@
             aria-label="{{ 'general.slider.next_slide' | t }}"
             aria-controls="Slider-{{ section.id }}"
           >
+<<<<<<< HEAD
             <span class="svg-wrapper">
               {{- 'icon-caret.svg' | inline_asset_content -}}
             </span>
+=======
+            {% render 'icon-caret' %}
+>>>>>>> 91877c2e (init repo)
           </button>
         </div>
       {%- endif -%}
@@ -192,7 +200,11 @@
       </div>
     {%- endif -%}
     {% if section.settings.image_shape == 'arch' %}
+<<<<<<< HEAD
       {{ 'mask-arch.svg' | inline_asset_content }}
+=======
+      {% render 'mask-arch' %}
+>>>>>>> 91877c2e (init repo)
     {%- endif -%}
   </div>
 </div>

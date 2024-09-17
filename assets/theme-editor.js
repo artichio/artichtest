@@ -36,12 +36,15 @@ document.addEventListener('shopify:section:load', () => {
   }
 });
 
+<<<<<<< HEAD
 document.addEventListener('shopify:section:unload', (event) => {
   document.querySelectorAll(`[data-section="${event.detail.sectionId}"]`).forEach((element) => {
     element.remove();
   });
 });
 
+=======
+>>>>>>> 91877c2e (init repo)
 document.addEventListener('shopify:section:reorder', () => hideProductModal());
 
 document.addEventListener('shopify:section:select', () => hideProductModal());

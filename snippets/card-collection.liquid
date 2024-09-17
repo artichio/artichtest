@@ -98,18 +98,26 @@
                   {{ 'onboarding.collection_title' | t }}
                 {%- endif -%}
                 {%- if card_collection.description == blank -%}
+<<<<<<< HEAD
                   <span class="icon-wrap">
                     {{- 'icon-arrow.svg' | inline_asset_content -}}
                   </span>
+=======
+                  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+>>>>>>> 91877c2e (init repo)
                 {%- endif %}
               </a>
             </h3>
             {%- if card_collection.description != blank -%}
               <p class="card__caption">
                 {{- card_collection.description | strip_html | truncatewords: 12 -}}
+<<<<<<< HEAD
                 <span class="icon-wrap">
                   {{- 'icon-arrow.svg' | inline_asset_content -}}
                 </span>
+=======
+                <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+>>>>>>> 91877c2e (init repo)
               </p>
             {%- endif -%}
           </div>
@@ -134,18 +142,26 @@
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
               {%- if card_collection.featured_image or card_collection.description == blank -%}
+<<<<<<< HEAD
                 <span class="icon-wrap">
                   {{- 'icon-arrow.svg' | inline_asset_content -}}
                 </span>
+=======
+                <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+>>>>>>> 91877c2e (init repo)
               {%- endif %}
             </a>
           </h3>
           {%- if card_collection.featured_image == null and card_collection.description != blank -%}
             <p class="card__caption">
               {{- card_collection.description | strip_html | truncatewords: 12 -}}
+<<<<<<< HEAD
               <span class="icon-wrap">
                 {{- 'icon-arrow.svg' | inline_asset_content -}}
               </span>
+=======
+              <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+>>>>>>> 91877c2e (init repo)
             </p>
           {%- endif -%}
         </div>
@@ -157,9 +173,13 @@
           <h3 class="card__heading card__heading--placeholder">
             <a role="link" aria-disabled="true" class="full-unstyled-link">
               {{ 'onboarding.collection_title' | t }}
+<<<<<<< HEAD
               <span class="icon-wrap">
                 {{- 'icon-arrow.svg' | inline_asset_content -}}
               </span>
+=======
+              <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+>>>>>>> 91877c2e (init repo)
             </a>
           </h3>
         </div>

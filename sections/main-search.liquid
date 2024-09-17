@@ -116,6 +116,7 @@
                 class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
                 aria-label="{{ 'general.search.reset' | t }}"
               >
+<<<<<<< HEAD
                 <span class="svg-wrapper">
                   {{- 'icon-reset.svg' | inline_asset_content -}}
                 </span>
@@ -124,6 +125,16 @@
                 <span class="svg-wrapper">
                   {{- 'icon-search.svg' | inline_asset_content -}}
                 </span>
+=======
+                <svg class="icon icon-close" aria-hidden="true" focusable="false">
+                  <use xlink:href="#icon-reset">
+                </svg>
+              </button>
+              <button type="submit" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+                <svg class="icon icon-search" aria-hidden="true" focusable="false">
+                  <use xlink:href="#icon-search">
+                </svg>
+>>>>>>> 91877c2e (init repo)
               </button>
             </div>
           </form>
@@ -176,9 +187,13 @@
                       </option>
                     {%- endfor -%}
                   </select>
+<<<<<<< HEAD
                   <span class="svg-wrapper">
                     {{- 'icon-caret.svg' | inline_asset_content -}}
                   </span>
+=======
+                  {% render 'icon-caret' %}
+>>>>>>> 91877c2e (init repo)
                 </div>
               </div>
             </div>
@@ -330,7 +345,11 @@
   </div>
 {% endpaginate %}
 {% if section.settings.image_shape == 'arch' %}
+<<<<<<< HEAD
   {{ 'mask-arch.svg' | inline_asset_content }}
+=======
+  {% render 'mask-arch' %}
+>>>>>>> 91877c2e (init repo)
 {%- endif -%}
 
 {% schema %}

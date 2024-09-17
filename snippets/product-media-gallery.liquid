@@ -132,9 +132,13 @@
         name="previous"
         aria-label="{{ 'general.slider.previous_slide' | t }}"
       >
+<<<<<<< HEAD
         <span class="svg-wrapper">
           {{- 'icon-caret.svg' | inline_asset_content -}}
         </span>
+=======
+        {% render 'icon-caret' %}
+>>>>>>> 91877c2e (init repo)
       </button>
       <div class="slider-counter caption">
         <span class="slider-counter--current">1</span>
@@ -148,9 +152,13 @@
         name="next"
         aria-label="{{ 'general.slider.next_slide' | t }}"
       >
+<<<<<<< HEAD
         <span class="svg-wrapper">
           {{- 'icon-caret.svg' | inline_asset_content -}}
         </span>
+=======
+        {% render 'icon-caret' %}
+>>>>>>> 91877c2e (init repo)
       </button>
     </div>
   </slider-component>
@@ -164,9 +172,13 @@
       data-shopify-title="{{ product.title | escape }}"
       data-shopify-xr-hidden
     >
+<<<<<<< HEAD
       <span class="svg-wrapper">
         {{- 'icon-3d-model.svg' | inline_asset_content -}}
       </span>
+=======
+      {% render 'icon-3d-model' %}
+>>>>>>> 91877c2e (init repo)
       {{ 'products.product.xr_button' | t }}
     </button>
   {%- endif -%}
@@ -193,9 +205,13 @@
         aria-controls="GalleryThumbnails-{{ section.id }}"
         data-step="3"
       >
+<<<<<<< HEAD
         <span class="svg-wrapper">
           {{- 'icon-caret.svg' | inline_asset_content -}}
         </span>
+=======
+        {% render 'icon-caret' %}
+>>>>>>> 91877c2e (init repo)
       </button>
       <ul
         id="Slider-Thumbnails-{{ section.id }}"
@@ -273,6 +289,7 @@
             >
               {%- if media.media_type == 'model' -%}
                 <span class="thumbnail__badge" aria-hidden="true">
+<<<<<<< HEAD
                   <span class="svg-wrapper">
                     {{- 'icon-3d-model.svg' | inline_asset_content -}}
                   </span>
@@ -282,6 +299,13 @@
                   <span class="svg-wrapper">
                     {{- 'icon-play.svg' | inline_asset_content -}}
                   </span>
+=======
+                  {%- render 'icon-3d-model' -%}
+                </span>
+              {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}
+                <span class="thumbnail__badge" aria-hidden="true">
+                  {%- render 'icon-play' -%}
+>>>>>>> 91877c2e (init repo)
                 </span>
               {%- endif -%}
               {%- capture thumbnail_id -%}
@@ -323,9 +347,13 @@
         aria-controls="GalleryThumbnails-{{ section.id }}"
         data-step="3"
       >
+<<<<<<< HEAD
         <span class="svg-wrapper">
           {{- 'icon-caret.svg' | inline_asset_content -}}
         </span>
+=======
+        {% render 'icon-caret' %}
+>>>>>>> 91877c2e (init repo)
       </button>
     </slider-component>
   {%- endif -%}

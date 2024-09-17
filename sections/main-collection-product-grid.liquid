@@ -66,9 +66,13 @@
                     </option>
                   {%- endfor -%}
                 </select>
+<<<<<<< HEAD
                 <span class="svg-wrapper">
                   {{- 'icon-caret.svg' | inline_asset_content -}}
                 </span>
+=======
+                {% render 'icon-caret' %}
+>>>>>>> 91877c2e (init repo)
               </div>
             </div>
           </div>
@@ -191,7 +195,11 @@
     </div>
   {%- endpaginate -%}
   {% if section.settings.image_shape == 'arch' %}
+<<<<<<< HEAD
     {{ 'mask-arch.svg' | inline_asset_content }}
+=======
+    {% render 'mask-arch' %}
+>>>>>>> 91877c2e (init repo)
   {%- endif -%}
 </div>
 

@@ -302,16 +302,28 @@
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 .customer .pagination li :first-child .svg-wrapper {
   height: 0.6rem;
 }
 
 .customer .pagination li:first-of-type .svg-wrapper {
+=======
+.customer .pagination li :first-child svg {
+  height: 0.6rem;
+}
+
+.customer .pagination li:first-of-type svg {
+>>>>>>> 91877c2e (init repo)
   margin-left: -0.2rem;
   transform: rotate(90deg);
 }
 
+<<<<<<< HEAD
 .customer .pagination li:last-of-type .svg-wrapper {
+=======
+.customer .pagination li:last-of-type svg {
+>>>>>>> 91877c2e (init repo)
   margin-right: -0.2rem;
   transform: rotate(-90deg);
 }
@@ -463,7 +475,11 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
 .account a .svg-wrapper {
+=======
+.account a svg {
+>>>>>>> 91877c2e (init repo)
   width: 1.5rem;
   margin-bottom: -0.03rem;
   margin-right: 1rem;
@@ -620,7 +636,11 @@
   line-height: calc(1 + 0.2 / var(--font-body-scale));
 }
 
+<<<<<<< HEAD
 .order .svg-wrapper {
+=======
+.order svg {
+>>>>>>> 91877c2e (init repo)
   width: 1.1rem;
   color: rgb(var(--color-foreground));
   margin-right: 0.5rem;

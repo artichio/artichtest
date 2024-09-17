@@ -189,7 +189,11 @@ slideshow-component:not(.page-width) .slider-buttons {
   }
 }
 
+<<<<<<< HEAD
 .slideshow__autoplay:hover .svg-wrapper {
+=======
+.slideshow__autoplay:hover svg {
+>>>>>>> 91877c2e (init repo)
   transform: scale(1.1);
 }
 

@@ -38,7 +38,11 @@
       {{ localization.country.currency.iso_code }}
       {{ localization.country.currency.symbol -}}
     </span>
+<<<<<<< HEAD
     {{ 'icon-caret.svg' | inline_asset_content }}
+=======
+    {% render 'icon-caret' %}
+>>>>>>> 91877c2e (init repo)
   </button>
   <div class="disclosure__list-wrapper country-selector" hidden>
     <div class="country-filter{% unless show_country_filter %} country-filter--no-padding{% endunless %}">
@@ -67,10 +71,21 @@
             class="country-filter__reset-button field__button hidden"
             aria-label="{{ 'general.search.reset' | t }}"
           >
+<<<<<<< HEAD
             {{- 'icon-reset.svg' | inline_asset_content -}}
           </button>
           <div class="country-filter__search-icon field__button motion-reduce">
             {{- 'icon-search.svg' | inline_asset_content -}}
+=======
+            <svg class="icon icon-close" aria-hidden="true" focusable="false">
+              <use xlink:href="#icon-reset">
+            </svg>
+          </button>
+          <div class="country-filter__search-icon field__button motion-reduce">
+            <svg class="icon icon-search" aria-hidden="true" focusable="false">
+              <use xlink:href="#icon-search">
+            </svg>
+>>>>>>> 91877c2e (init repo)
           </div>
         </div>
       {% endif %}
@@ -79,7 +94,11 @@
         type="button"
         aria-label="{{ 'accessibility.close' | t }}"
       >
+<<<<<<< HEAD
         {{- 'icon-close.svg' | inline_asset_content -}}
+=======
+        {% render 'icon-close' %}
+>>>>>>> 91877c2e (init repo)
       </button>
     </div>
     <div id="sr-country-search-results" class="visually-hidden" aria-live="polite"></div>
@@ -109,7 +128,11 @@
                     class="visibility-hidden"
                   {% endif %}
                 >
+<<<<<<< HEAD
                   {{- 'icon-checkmark.svg' | inline_asset_content -}}
+=======
+                  {%- render 'icon-checkmark' -%}
+>>>>>>> 91877c2e (init repo)
                 </span>
                 <span class="country">{{- country.name }}</span>
                 <span class="localization-form__currency motion-reduce{% unless show_currencies %} hidden{% endunless %}">
@@ -138,7 +161,11 @@
                   class="visibility-hidden"
                 {% endif %}
               >
+<<<<<<< HEAD
                 {{- 'icon-checkmark.svg' | inline_asset_content -}}
+=======
+                {%- render 'icon-checkmark' -%}
+>>>>>>> 91877c2e (init repo)
               </span>
               <span class="country">{{- country.name }}</span>
               <span class="localization-form__currency motion-reduce{% unless show_currencies %} hidden{% endunless %}">

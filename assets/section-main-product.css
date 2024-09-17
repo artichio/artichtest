@@ -159,7 +159,11 @@ product-info {
   margin-bottom: 1.5rem;
 }
 
+<<<<<<< HEAD
 .product-form__error-message-wrapper .svg-wrapper {
+=======
+.product-form__error-message-wrapper svg {
+>>>>>>> 91877c2e (init repo)
   flex-shrink: 0;
   width: 1.5rem;
   height: 1.5rem;
@@ -185,10 +189,13 @@ product-info {
   max-width: 100%;
 }
 
+<<<<<<< HEAD
 .product-form__input .svg-wrapper {
   right: 1.5rem;
 }
 
+=======
+>>>>>>> 91877c2e (init repo)
 .product-form__submit {
   margin-bottom: 1rem;
 }
@@ -1189,12 +1196,15 @@ a.product__text {
   gap: 0.5rem;
 }
 
+<<<<<<< HEAD
 .product__inventory .svg-wrapper,
 .product__inventory svg {
   width: 15px;
   height: 15px;
 }
 
+=======
+>>>>>>> 91877c2e (init repo)
 .product--no-media .product__inventory {
   justify-content: center;
 }
@@ -1208,10 +1218,13 @@ a.product__text {
   content: '#';
 }
 
+<<<<<<< HEAD
 .product__inventory .icon-inventory-status circle:first-of-type {
   opacity: .3;
 }
 
+=======
+>>>>>>> 91877c2e (init repo)
 /* Icon with text */
 .icon-with-text {
   --icon-size: calc(var(--font-heading-scale) * 3rem);
@@ -1229,18 +1242,30 @@ a.product__text {
   --icon-size: calc(var(--font-heading-scale) * 2rem);
 }
 
+<<<<<<< HEAD
 .icon-with-text .svg-wrapper {
+=======
+.icon-with-text .icon {
+>>>>>>> 91877c2e (init repo)
   fill: rgb(var(--color-foreground));
   height: var(--icon-size);
   width: var(--icon-size);
 }
 
+<<<<<<< HEAD
 .icon-with-text--horizontal .svg-wrapper,
+=======
+.icon-with-text--horizontal .icon,
+>>>>>>> 91877c2e (init repo)
 .icon-with-text--horizontal img {
   margin-bottom: var(--icon-spacing);
 }
 
+<<<<<<< HEAD
 .icon-with-text--vertical .svg-wrapper {
+=======
+.icon-with-text--vertical .icon {
+>>>>>>> 91877c2e (init repo)
   min-height: var(--icon-size);
   min-width: var(--icon-size);
   margin-right: var(--icon-spacing);
@@ -1261,7 +1286,11 @@ a.product__text {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .icon-with-text--horizontal .svg-wrapper + .h4,
+=======
+.icon-with-text--horizontal svg + .h4,
+>>>>>>> 91877c2e (init repo)
 .icon-with-text--horizontal img + .h4,
 .icon-with-text--horizontal.icon-with-text--text-only .h4 {
   padding-top: 0;
@@ -1435,8 +1464,11 @@ a.product__text {
   left: 0.28rem;
   z-index: 5;
   top: 0.4rem;
+<<<<<<< HEAD
   width: 10px;
   height: 9px;
+=======
+>>>>>>> 91877c2e (init repo)
 }
 
 .recipient-form > input[type='checkbox']:checked + label .icon-checkmark {

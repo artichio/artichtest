@@ -277,7 +277,11 @@ quick-order-list-remove-button .icon-remove {
   display: block;
 }
 
+<<<<<<< HEAD
 .quick-order-list__message .svg-wrapper {
+=======
+.quick-order-list__message svg {
+>>>>>>> 91877c2e (init repo)
   margin-right: 1rem;
   width: 1.3rem;
 }
@@ -287,7 +291,11 @@ quick-order-list-remove-button .icon-remove {
   display: flex;
 }
 
+<<<<<<< HEAD
 .quick-order-list-error .svg-wrapper {
+=======
+.quick-order-list-error svg {
+>>>>>>> 91877c2e (init repo)
   flex-shrink: 0;
   width: 1.2rem;
   margin-right: 0.7rem;
@@ -348,14 +356,22 @@ quick-order-list-remove-button:hover .icon-remove {
   order: 1;
 }
 
+<<<<<<< HEAD
 .variant-item__error-text + .svg-wrapper {
+=======
+.variant-item__error-text + svg {
+>>>>>>> 91877c2e (init repo)
   flex-shrink: 0;
   width: 1.2rem;
   margin-right: 0.5rem;
   margin-top: 0.1rem;
 }
 
+<<<<<<< HEAD
 .variant-item__error-text:empty + .svg-wrapper {
+=======
+.variant-item__error-text:empty + svg {
+>>>>>>> 91877c2e (init repo)
   display: none;
 }
 

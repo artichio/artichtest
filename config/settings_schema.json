@@ -2,7 +2,11 @@
   {
     "name": "theme_info",
     "theme_name": "Dawn",
+<<<<<<< HEAD
     "theme_version": "15.1.0",
+=======
+    "theme_version": "15.0.1",
+>>>>>>> 91877c2e (init repo)
     "theme_author": "Shopify",
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"

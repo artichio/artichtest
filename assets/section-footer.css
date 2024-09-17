@@ -436,6 +436,11 @@
 
 .footer-block__brand-info .footer__list-social.list-social {
   justify-content: flex-start;
+<<<<<<< HEAD
+=======
+  margin-left: -1.3rem;
+  margin-right: -1.3rem;
+>>>>>>> 91877c2e (init repo)
 }
 
 .footer-block__details-content .placeholder-svg {

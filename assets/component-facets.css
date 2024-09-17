@@ -95,10 +95,13 @@
   transition: none;
 }
 
+<<<<<<< HEAD
 .select .icon-caret {
   width: 10px;
 }
 
+=======
+>>>>>>> 91877c2e (init repo)
 .facet-filters button {
   margin-left: 2.5rem;
 }
@@ -199,11 +202,14 @@
   margin-bottom: 1.5rem;
 }
 
+<<<<<<< HEAD
 .facets__summary .svg-wrapper {
   height: auto;
   width: auto;
 }
 
+=======
+>>>>>>> 91877c2e (init repo)
 .facets__disclosure fieldset {
   padding: 0;
   margin: 0;
@@ -220,7 +226,11 @@
   animation: animateMenuOpen var(--duration-default) ease;
 }
 
+<<<<<<< HEAD
 .facets__summary span:first-of-type {
+=======
+.facets__summary span {
+>>>>>>> 91877c2e (init repo)
   transition: text-decoration var(--duration-short) ease;
 }
 
@@ -507,24 +517,38 @@
   display: flex;
 }
 
+<<<<<<< HEAD
 .facet-checkbox > svg,
 .facet-checkbox > .svg-wrapper {
+=======
+.facet-checkbox > svg {
+>>>>>>> 91877c2e (init repo)
   background-color: rgb(var(--color-background));
   margin-right: 1.2rem;
   flex-shrink: 0;
 }
 
+<<<<<<< HEAD
 .facet-checkbox .svg-wrapper {
+=======
+.facet-checkbox .icon-checkmark {
+>>>>>>> 91877c2e (init repo)
   visibility: hidden;
   position: absolute;
   left: 0.3rem;
   z-index: 5;
   top: 1.4rem;
+<<<<<<< HEAD
   width: 1.1rem;
   height: 0.7rem;
 }
 
 .facet-checkbox > input[type='checkbox']:checked ~ .svg-wrapper > .icon-checkmark {
+=======
+}
+
+.facet-checkbox > input[type='checkbox']:checked ~ .icon-checkmark {
+>>>>>>> 91877c2e (init repo)
   visibility: visible;
 }
 
@@ -534,7 +558,11 @@
     border: 0.1rem solid rgb(var(--color-background));
   }
 
+<<<<<<< HEAD
   .facet-checkbox > input[type='checkbox']:checked ~ .svg-wrapper > .icon-checkmark {
+=======
+  .facet-checkbox > input[type='checkbox']:checked ~ .icon-checkmark {
+>>>>>>> 91877c2e (init repo)
     border: none;
   }
 }
@@ -594,7 +622,11 @@ span.active-facets__button-inner {
   font-size: 1rem;
   min-height: 0;
   min-width: 0;
+<<<<<<< HEAD
   padding: 0.25rem 1.25rem;
+=======
+  padding: 0.5rem 1rem;
+>>>>>>> 91877c2e (init repo)
   display: flex;
   align-items: center;
 }
@@ -638,8 +670,13 @@ span.active-facets__button-inner:after {
   }
 
   span.active-facets__button-inner {
+<<<<<<< HEAD
     padding-bottom: 0.1rem;
     padding-top: 0.1rem;
+=======
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+>>>>>>> 91877c2e (init repo)
   }
 
   .active-facets__button-wrapper {
@@ -688,7 +725,11 @@ a.active-facets__button.focused .active-facets__button-inner {
   outline: none;
 }
 
+<<<<<<< HEAD
 .active-facets__button .svg-wrapper {
+=======
+.active-facets__button svg {
+>>>>>>> 91877c2e (init repo)
   align-self: center;
   flex-shrink: 0;
   margin-left: 0.6rem;
@@ -698,10 +739,17 @@ a.active-facets__button.focused .active-facets__button-inner {
 }
 
 @media all and (min-width: 990px) {
+<<<<<<< HEAD
   .active-facets__button .svg-wrapper {
     margin-right: -0.4rem;
     margin-top: 0.1rem;
     width: 1.2rem;
+=======
+  .active-facets__button svg {
+    margin-right: -0.4rem;
+    margin-top: 0.1rem;
+    width: 1.4rem;
+>>>>>>> 91877c2e (init repo)
   }
 }
 
@@ -860,7 +908,11 @@ a.active-facets__button.focused .active-facets__button-inner {
   margin-left: 1rem;
 }
 
+<<<<<<< HEAD
 .mobile-facets__open .svg-wrapper {
+=======
+.mobile-facets__open svg {
+>>>>>>> 91877c2e (init repo)
   width: 2rem;
 }
 
@@ -883,7 +935,11 @@ a.active-facets__button.focused .active-facets__button-inner {
   transition: opacity var(--duration-short) ease;
 }
 
+<<<<<<< HEAD
 .mobile-facets__close .svg-wrapper {
+=======
+.mobile-facets__close svg {
+>>>>>>> 91877c2e (init repo)
   width: 2.2rem;
 }
 
@@ -892,7 +948,11 @@ details.menu-opening .mobile-facets__close {
   opacity: 1;
 }
 
+<<<<<<< HEAD
 details.menu-opening .mobile-facets__close .svg-wrapper {
+=======
+details.menu-opening .mobile-facets__close svg {
+>>>>>>> 91877c2e (init repo)
   margin: 0;
 }
 
@@ -955,7 +1015,11 @@ details.menu-opening .mobile-facets__close .svg-wrapper {
   padding: 1.3rem 2.5rem;
 }
 
+<<<<<<< HEAD
 .mobile-facets__summary .svg-wrapper {
+=======
+.mobile-facets__summary svg {
+>>>>>>> 91877c2e (init repo)
   margin-left: auto;
 }
 
@@ -1032,8 +1096,11 @@ input.mobile-facets__checkbox {
   top: 1.9rem;
   left: 2.8rem;
   visibility: hidden;
+<<<<<<< HEAD
   width: 11px;
   height: 9px;
+=======
+>>>>>>> 91877c2e (init repo)
 }
 
 .mobile-facets__label > input[type='checkbox']:checked ~ .icon-checkmark {

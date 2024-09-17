@@ -148,7 +148,11 @@
   max-height: 20.5rem;
   max-width: 25.5rem;
   min-width: 12rem;
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: max-content;
+>>>>>>> 91877c2e (init repo)
 }
 
 .country-selector__list {
@@ -176,10 +180,13 @@
   z-index: 6;
 }
 
+<<<<<<< HEAD
 .country-filter__input {
   min-width: 200px;
 }
 
+=======
+>>>>>>> 91877c2e (init repo)
 .country-filter__reset-button,
 .country-filter__search-icon {
   right: calc(var(--inputs-border-width));
@@ -445,7 +452,10 @@
 .menu-drawer__localization + .list-social {
   margin-top: 1rem;
 }
+<<<<<<< HEAD
 
 .language-selector .disclosure__list {
   min-width: 200px;
 }
+=======
+>>>>>>> 91877c2e (init repo)

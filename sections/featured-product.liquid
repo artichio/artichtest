@@ -189,9 +189,13 @@
                           <span class="visually-hidden">
                             {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
                           </span>
+<<<<<<< HEAD
                           <span class="svg-wrapper">
                             {{- 'icon-minus.svg' | inline_asset_content -}}
                           </span>
+=======
+                          {% render 'icon-minus' %}
+>>>>>>> 91877c2e (init repo)
                         </button>
                         <input
                           class="quantity__input"
@@ -213,9 +217,13 @@
                           <span class="visually-hidden">
                             {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
                           </span>
+<<<<<<< HEAD
                           <span class="svg-wrapper">
                             {{- 'icon-plus.svg' | inline_asset_content -}}
                           </span>
+=======
+                          {% render 'icon-plus' %}
+>>>>>>> 91877c2e (init repo)
                         </button>
                       </quantity-input>
                       {%- liquid
@@ -445,7 +453,11 @@
               class="link product__view-details animate-arrow"
             >
               {{ 'products.product.view_full_details' | t }}
+<<<<<<< HEAD
               {{- 'icon-arrow.svg' | inline_asset_content -}}
+=======
+              {% render 'icon-arrow' %}
+>>>>>>> 91877c2e (init repo)
             </a>
           </section>
         </div>

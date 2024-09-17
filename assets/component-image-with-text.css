@@ -74,7 +74,11 @@
   fill: currentColor;
 }
 
+<<<<<<< HEAD
 .image-with-text__media--placeholder:is(.animate--ambient, .animate--zoom-in) > .svg-wrapper {
+=======
+.image-with-text__media--placeholder:is(.animate--ambient, .animate--zoom-in) > svg {
+>>>>>>> 91877c2e (init repo)
   top: 0;
   left: 0;
   transform: translate(0);

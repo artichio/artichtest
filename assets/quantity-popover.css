@@ -42,13 +42,20 @@ quantity-popover quick-order-list-remove-button .button {
 }
 
 .quantity-popover__info-button--icon-with-label {
+<<<<<<< HEAD
+=======
+  align-items: flex-start;
+>>>>>>> 91877c2e (init repo)
   text-align: left;
 }
 
 .quantity-popover__info-button--icon-with-label svg {
   flex-shrink: 0;
+<<<<<<< HEAD
   width: 15px;
   height: 14px;
+=======
+>>>>>>> 91877c2e (init repo)
 }
 
 .quantity-popover__info-button--open {
@@ -65,8 +72,11 @@ quantity-popover quick-order-list-remove-button .button {
 
 .quantity-popover__info-button--icon-only svg {
   transition: transform var(--duration-default) ease;
+<<<<<<< HEAD
   width: 15px;
   height: 14px;
+=======
+>>>>>>> 91877c2e (init repo)
 }
 
 @media screen and (max-width: 989px) {
