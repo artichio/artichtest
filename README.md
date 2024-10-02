@@ -14,7 +14,7 @@ To get started with this test, you need the following:
 
 - A Shopify Partner account
 - A development store (if you don't have one, create one for free [here](https://www.shopify.com/partners))
-- [Shopify CLI](https://shopify.dev/docs/themes/tools/cli) installed on your machine
+- [Shopify CLI](https://shopify.dev/docs/api/shopify-cli/theme) installed on your machine
 - [Theme Check](https://github.com/shopify/theme-check) (Optional, but recommended for linting and best practices)
 
 ### Setup
